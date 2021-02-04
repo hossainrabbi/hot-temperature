@@ -24,6 +24,12 @@
         background-color: #0000005b;
         height: 100vh;
       }
+      .error-message {
+        margin-top: -16px;
+        margin-left: 2px;
+        font-size: 14px;
+        display: none;
+      }
     </style>
   </head>
 
@@ -37,6 +43,7 @@
               type="text"
               class="form-control"
               placeholder="Enter a location for Weather ..."
+              required
             />
             <div class="input-group-append">
               <button
@@ -48,6 +55,9 @@
               </button>
             </div>
           </div>
+          <p id="error-message" class="text-danger error-message">
+            Please Type a Valid City Name
+          </p>
         </form>
         <div class="weather-status text-white text-center">
           <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="" />
