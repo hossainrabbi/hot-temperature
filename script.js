@@ -6,7 +6,7 @@ function weather() {
   }
   const cityName = cityInput.value.toLowerCase();
   const apiKey = '6d8064244f3dd90c850da59c262d3fc8';
-  const API = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
+  const API = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}`;
   fetch(API)
     .then((res) => res.json())
     .then((data) => {
